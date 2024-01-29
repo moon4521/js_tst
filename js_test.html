@@ -7,13 +7,11 @@
 
     <body>
         <script>
-            let name = prompt('What\'s the \"official\" name of JavaScript?');
+            let login = prompt('Input position:', '');
 
-            if (name == ECMAScript) {
-                console.log('Right!');
-            } else {
-                console.log('You don\'t know? \"ECMAScript\"!');
-            }
+            let message = (login == 'Employee') ? alert('Hello')
+            : (login == 'Director') ? alert('Greetings') : (login == '')
+            ? alert('No login') : alert('');
         </script>
     </body>
 </html>
