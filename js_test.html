@@ -24,7 +24,7 @@
 
             alert(lastLetter(str));**/
 
-            let output = parseInt(prompt('Input a number:',''));
+            /**let output = parseInt(prompt('Input a number:',''));
 
             for (i = 1; i <= output; i++) {
                 if (i % 3 === 0 && i % 5 === 0) {
@@ -38,6 +38,24 @@
                 } else {
                     console.log(i);
                 }
+            }**/
+
+            /**try {
+                let a = undefinedVariable;
+            } catch (e) {
+                console.log(e instanceof ReferenceError);
+                console.log(e.message);
+                console.log(e.name);
+                console.log(e.stack);
+            }**/
+
+            try {
+                throw new ReferenceError("Hello");
+            } catch (e) {
+                console.log(e instanceof ReferenceError);
+                console.log(e.message);
+                console.log(e.name);
+                console.log(e.stack);
             }
 
         </script>
